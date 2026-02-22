@@ -5,8 +5,8 @@
 {{- end -}}
 
 {{- if $toc -}}
-    {{- $hasHeadings := (findRE "<li>" .TableOfContents) -}}
-    {{- if $hasHeadings -}}
+    {{- $tocPlain := (plainify .TableOfContents) | strings.TrimSpace -}}
+    {{- if gt (len $tocPlain) 0 -}}
     {{ $tocOpen := "" }}
     {{ if or .Site.Params.tocOpen .Params.tocOpen }}
         {{ if not (eq .Params.tocOpen false) }}
