@@ -7,8 +7,8 @@ enableEmoji = true
 ignoreErrors = ["error-missing-instagram-accesstoken"]
 
 [author]
-  name = "Gil"
-  email = "gil@example.com"
+  name = "Gil Cheong"
+  email = "mowing.home9o@icloud.com"
 
 [markup]
   [markup.highlight]
@@ -45,14 +45,15 @@ ignoreErrors = ["error-missing-instagram-accesstoken"]
   [Languages.ko.params]
     sitename = "Gil's Blog"
     defaultColor = "dark"
-    description = "개발 블로그"
+    description = "Novice Wanderer"
     mainSections = ["posts"]
     toc = true
     tocOpen = false
     goToTop = true
 
     [Languages.ko.params.author]
+      avatar = "avatar.jpg"
       name = "Gil"
-      email = "gil@example.com"
+      email = "mowing.home9o@icloud.com"
       intro = "Gil's Blog"
-      description = "개발 블로그"
+      description = "Novice Wanderer"
