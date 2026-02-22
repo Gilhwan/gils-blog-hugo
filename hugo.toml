@@ -1,0 +1,58 @@
+baseURL = 'https://gilhwan.github.io/gils-blog-hugo/'
+title = "Gil's Blog"
+theme = "hugo-blog-awesome"
+languageCode = 'ko'
+defaultContentLanguage = "ko"
+enableEmoji = true
+ignoreErrors = ["error-missing-instagram-accesstoken"]
+
+[author]
+  name = "Gil"
+  email = "gil@example.com"
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+
+[Languages.ko]
+  languageName = "한국어"
+  languageCode = "ko"
+  contentDir = "content/ko"
+  weight = 1
+
+  [Languages.ko.menu]
+  [[Languages.ko.menu.main]]
+    pageRef = "/"
+    name = "홈"
+    url = "/"
+    weight = 10
+  [[Languages.ko.menu.main]]
+    pageRef = "posts"
+    name = "글"
+    url = "/posts/"
+    weight = 20
+  [[Languages.ko.menu.main]]
+    pageRef = "about"
+    name = "소개"
+    url = "/about/"
+    weight = 30
+
+  [Languages.ko.params]
+    sitename = "Gil's Blog"
+    defaultColor = "dark"
+    description = "개발 블로그"
+    mainSections = ["posts"]
+    toc = true
+    tocOpen = false
+    goToTop = true
+
+    [Languages.ko.params.author]
+      name = "Gil"
+      email = "gil@example.com"
+      intro = "Gil's Blog"
+      description = "개발 블로그"
